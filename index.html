@@ -1,11 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>R-Ticketing</title>
+    <title>R-Ticket</title>
+    <link rel="shortcut icon" href="images/bus-icon.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
+    <header class="mx-atuo mb-5">
+        <div class="navbar ">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+
+                        <li><a>About</a></li>
+                        <li><a>Destinations</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">R-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+
+                    <li><a>About</a></li>
+                    <li><a>Destinations</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end flex">
+                <a class="btn"><span class="text-lime-500 font-bold">Bus</span>
+                    <span><img src="images/bus-icon.png" alt=""></span>
+                </a>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- banner section start here -->
+        <section class="mx-auto w-[1170px]">
+            <div class="hero min-h-screen rounded-2xl" style="background-image: url(images/banner.png);">
+                <div class="hero-overlay bg-opacity-50"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with <span
+                                class="text-lime-500">R-Paribahan</span></h1>
+                        <p class="mb-5">R-Phoribahan represents a modern solution to the transportation challenges faced
+                            by many cities in Bangladesh. By leveraging technology and innovation, it aims to improve
+                            the commuting experience for residents while also providing economic opportunities for
+                            drivers.</p>
+                        <button class="btn bg-lime-600">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+            <!-- bounes section -->
+  
+        </section>
+        <!-- best offer section start here -->
+        <section class="mx-auto w-[1170px] mt-5">
+            <h1 class="text-5xl font-extrabold text-center mb-5 ">Best offers for you</h1>
+            <div class="flex gap-5">
+                <div class="bg-[#FFBF0F] flex rounded-2xl">
+                    <div class="p-10"><span class="text-4xl font-bold">15% OFF</span> <br>
+                        on your next purchase
+                        use by January 2024
+                    </div>
+                    <div><img src="images/cupon-devider.png" alt=""></div>
+                    <div class="p-10"><span class="text-2xl font-bold">NEW15</span> <br>
+                        Coupon Code</div>
+                </div>
+                <div class="bg-[#F78C9C] flex rounded-2xl">
+                    <div class=" p-10"><span class="text-4xl font-bold">20% OFF</span> <br>
+                        on your next purchase
+                        use by January 2024
+                    </div>
+                    <div><img src="images/cupon-devider.png" alt=""></div>
+                    <div class="p-10"><span class="text-2xl font-bold ">Couple 20</span>
+                        Coupon Code</div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center">
+                <button class="btn text-lime-500 font-semibold mt-10" >See All Offers</button>
+            </div>
+
+
+
+        </section>
+        <!-- poribahan section start here  -->
+        <section class="mx- auto">
+
+        </section>
+        <footer class="mx-auto w-[1170px] bg-black text-white h-[450px] p-20">
+            <div class="flex justify-between">
+                <div>
+                    <h1 class="text-4xl font-semibold mb-5">R-Ticket</h1>
+                    <p class="text-[#FFFFFF] opacity-80">R-Ticket is a digital platform to make your daily commuting better.</p>
     
+                </div>
+                <div>
+                    <div><h2>Download our app</h2></div>
+                    <div class="flex gap-2 ">
+                        <div><img src="images/playstore.png" alt="">
+                        </div>
+                        <div><h4><span class="font-extralight text-xs">GET IT ON</span> <br> Google Play</h4></div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-8">
+    
+        </footer>
+
+    </main>
+    
+
 </body>
+
 </html>
