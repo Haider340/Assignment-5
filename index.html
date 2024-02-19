@@ -48,7 +48,7 @@
     </header>
     <main>
         <!-- banner section start here -->
-        <section class="mx-auto w-[1170px]">
+        <section class="mx-auto w-[1170px] relative">
             <div class="hero min-h-screen rounded-2xl" style="background-image: url(images/banner.png);">
                 <div class="hero-overlay bg-opacity-50"></div>
                 <div class="hero-content text-center text-neutral-content">
@@ -66,8 +66,34 @@
             <!-- bounes section -->
 
         </section>
+        <section class="absolute left-[0px] right-[0px] -bottom-[180px] justify-center items-center">
+            <div class=" flex gap-3 mx-auto w-[900px]">
+                <div class="flex gap-3 border-[4px] border-solid border-b-lime-500 rounded-2xl p-5 bg-white">
+                    <div><img src="images/people.png" alt=""></div>
+                    <div>
+                        <p><span class="text-3xl font-bold">500K +</span> <br><span class="text-xs">Registered
+                                users</span></p>
+                    </div>
+                </div>
+                <div class="flex gap-3 border-[4px] border-solid border-b-lime-500 rounded-2xl p-5 bg-white">
+                    <div><img src="images/ticket-cupon.png" alt=""></div>
+                    <div>
+                        <p><span class="text-3xl font-bold">1.7 lacks</span> <br><span class="text-xs">Tickets
+                                sold</span></p>
+                    </div>
+                </div>
+                <div class="flex gap-3 border-[4px] border-solid border-b-lime-500 rounded-2xl p-5 bg-white">
+                    <div><img src="images/stoppage.png" alt=""></div>
+                    <div>
+                        <p><span class="text-3xl font-bold">80K+</span> <br><span class="text-xs">Rental partners</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- best offer section start here -->
-        <section class="mx-auto w-[1170px] mt-5 mb-20">
+        <section class="mx-auto w-[1170px] mt-20 mb-20">
             <h1 class="text-5xl font-extrabold text-center mb-5 ">Best offers for you</h1>
             <div class="flex gap-5">
                 <div class="bg-[#FFBF0F] flex rounded-2xl">
@@ -85,8 +111,7 @@
                         use by January 2024
                     </div>
                     <div><img src="images/cupon-devider.png" alt=""></div>
-                    <div class="p-10"><span class="text-2xl font-bold ">Couple 20</span>
-                        Coupon Code</div>
+                    <div class="p-10"><span class="text-2xl font-bold ">Couple20</span><br>Coupon Code</div>
                 </div>
             </div>
             <div class="flex justify-center items-center">
@@ -97,7 +122,8 @@
 
         </section>
         <!-- poribahan section start here  -->
-        <section class="mx-auto w-[1240px] bg-[#F7F8F8] opacity-100 mb-10 p-10">
+        <section
+            class="mx-auto w-[1240px] bg-[#F7F8F8] opacity-100 mb-10 p-10 rounded-2xl border-[3px] border-solid border-t-lime-600">
             <div>
                 <h1 class="text-4xl font-bold text-center text-lime-500">Rekha Paribahan</h1>
                 <p class="text-[#030712] opacity-60 text-center">As with any transportation service, it's a good idea
@@ -120,7 +146,9 @@
                             </div>
                         </div>
                     </div>
+
                     <div><img src="images/info-devider.png" alt=""></div>
+
                     <div class="p-10"><img src="images/fare.png" alt="">
                         <p><span class="text-2xl font-bold">550 Taka</span><br>per seat</p>
                     </div>
@@ -203,13 +231,6 @@
 
                         </div>
 
-
-
-
-
-
-
-
                     </section>
                     <section class="mt-8 p-8">
                         <p class="text-2xl font-bold">Select Your Seat</p>
@@ -253,7 +274,7 @@
                                 <hr class="mt-2">
                                 <div class="join">
                                     <input class="input input-bordered join-item" placeholder="Have you any Coupon?" />
-                                    <button class="btn join-item rounded-r-full bg-lime-500">Apply</button>
+                                    <button class="btn join-item rounded-r-full bg-lime-500 text-white">Apply</button>
                                 </div>
                                 <table>
                                     <tbody>
@@ -266,34 +287,40 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <!-- Login Form -->
+
                             <form action="#" method="POST">
                                 <!-- Username Input -->
                                 <div class="mb-4">
                                     <label for="Passenger Name*"
                                         class="block text-gray-700 text-sm font-bold mb-2">Passenger Name*</label>
-                                    <input type="text" id="Passenger Name*" name="Passenger Name*"
+                                    <input placeholder="Enter Your Name" type="text" id="Passenger Name*"
+                                        name="Passenger Name*"
                                         class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500">
                                 </div>
 
                                 <!-- PhoneNumber Input -->
                                 <div class="mb-6">
-                                    <label for="Phone Number*"
-                                        class="block text-gray-700 text-sm font-bold mb-2">Phone Number*</label>
-                                    <input type="Phone Number*" id="Phone Number*" name="Phone Number*"
+                                    <label for="Phone Number*" class="block text-gray-700 text-sm font-bold mb-2">Phone
+                                        Number*</label>
+                                    <input placeholder="Enter Phone Number" type="Phone Number*" id="Phone Number*"
+                                        name="Phone Number*"
                                         class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500">
                                 </div>
                                 <div class="mb-6">
-                                    <label for="Email ID"
-                                        class="block text-gray-700 text-sm font-bold mb-2">Email ID*</label>
-                                    <input type="Email ID" id="Email ID*" name="Email ID"
+                                    <label for="Email ID" class="block text-gray-700 text-sm font-bold mb-2">Email
+                                        ID*</label>
+                                    <input placeholder="Enter Your Mail" type="Email ID" id="Email ID*" name="Email ID"
                                         class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500">
                                 </div>
 
                                 <!-- next Button -->
-                                <button class="btn btn-wide w-full bg-lime-500">Wide</button>
-                               
+                                <button class="btn btn-wide w-full bg-lime-500 text-white">Next</button>
+
                             </form>
+                            <div class="mt-5 flex gap-5">
+                                <p class="decoration-solid">Terms and condition</p>
+                                <p class="decoration-solid">Privacy and policy</p>
+                            </div>
 
                         </div>
                     </section>
@@ -302,17 +329,6 @@
                     </section>
 
                 </div>
-
-
-
-
-
-
-
-
-
-
-
 
             </div>
 
@@ -344,7 +360,7 @@
             <hr class=" border-dotted border-gray-400 my-8">
             <div class="flex justify-between text-[#FFFFFF] opacity-70">
                 <div>
-                    <p>@all rights reserved, P-Ticket services limited.2024</p>
+                    <p>@all rights reserved,R -Ticket services limited.2024</p>
                 </div>
                 <div class="flex gap-4">
                     <div>Terms & condition</div>
