@@ -99,7 +99,7 @@
             <h1 class="text-5xl font-extrabold text-center mb-5 ">Best offers for you</h1>
             <div class="flex gap-5">
                 <div class="bg-[#FFBF0F] flex rounded-2xl">
-                    <div class="p-10"><span class="text-4xl font-bold">15% OFF</span> <br>
+                    <div class="p-10"><span id="coupon-code1" class="text-4xl font-bold">15% OFF</span> <br>
                         on your next purchase
                         use by January 2024
                     </div>
@@ -108,7 +108,7 @@
                         Coupon Code</div>
                 </div>
                 <div class="bg-[#F78C9C] flex rounded-2xl">
-                    <div class=" p-10"><span class="text-4xl font-bold">20% OFF</span> <br>
+                    <div class=" p-10"><span id="coupon-code2" class="text-4xl font-bold">20% OFF</span> <br>
                         on your next purchase
                         use by January 2024
                     </div>
@@ -242,13 +242,40 @@
                         <hr class="mt-2">
 
                         <div>
-                            <div class="class-container">
-                                <div class="select-seats flex flex-grow justify-between ">
-                                    <div class="Seats ">Seats <span id="seats">0</span></div>
-                                    <div class="class">Class</div>
-                                    <div class="price">Price</div>
-
-                                </div>
+                            <div id="class-container" class="class-container">
+                                <div class="overflow-x-auto">
+                                    <table class="table">
+                                      <!-- head -->
+                                      <thead>
+                                        <tr>
+                                          <th>Seat <span>0</span></th>
+                                          <th>Class</th>
+                                          <th>Price</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <!-- row 1 -->
+                                        <tr>
+                                          <th></th>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                        </tr>
+                                        <!-- row 2 -->
+                                        <tr class="hover">
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                        </tr>
+                                        <!-- row 3 -->
+                                        <tr>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
                                 <div class="selected-seats-container" ></div>
                                 <hr />
                                 <h2 class="my-4 font-bold">Total Price: <span id="total-price">0</span> BDT</h2>
@@ -321,7 +348,7 @@
               <div class="modal-box">
                 <img class="" src="images/success.png" alt="">
 
-                <h3 class="font-bold text-2xl text-lime-500 mt-5">Succes</h3>
+                <h3 class="font-bold text-2xl text-lime-500 mt-5">SUCCESS</h3>
                 <p class="py-4 mt-7">Thanks for booking our bus seats and we have to ensure your safe travel.</p>
                 <div class="modal-action">
                   <form method="dialog">

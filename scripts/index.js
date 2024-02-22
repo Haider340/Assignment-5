@@ -12,7 +12,7 @@ function ticketClick(){
 function continueClick(){
     const modalSection = document.getElementById('Continue');
     modalSection.classList.add('hidden');
-    
+
     const poribahanSection = document.getElementById('poribahan-section');
     poribahanSection.classList.add('hidden');
 
@@ -20,3 +20,4 @@ function continueClick(){
     bannerSection.classList.remove('hidden');
 
 }
+
