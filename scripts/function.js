@@ -27,6 +27,11 @@ function updateSelectedSeats(seat) {
             alert("Error: You can only book up to 4 seats.");
         }
     }
+    const remaningSeat = document.getElementById('seat-left');
+        const remaningSeatText = remaningSeat.innerText;
+        const updateSeat = parseInt(remaningSeatText);
+         const newSeat = updateSeat - 1;
+         remaningSeat.innerText =newSeat;
     updateTotalPrice();
 }
 
