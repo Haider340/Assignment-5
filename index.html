@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header class="mx-atuo mb-5 p-8">
+    <header class="mx-auto mb-5 p-8">
         <div class="navbar ">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -48,7 +48,7 @@
     </header>
     <main>
         <!-- banner section start here -->
-        <section class="mx-auto w-[1170px] relative">
+        <section class="mx-auto w-[1170px] relative" id="banner-section">
             <div class="hero min-h-screen rounded-2xl" style="background-image: url(images/banner.png);">
                 <div class="hero-overlay bg-opacity-50"></div>
                 <div class="hero-content text-center text-neutral-content">
@@ -59,14 +59,16 @@
                             by many cities in Bangladesh. By leveraging technology and innovation, it aims to improve
                             the commuting experience for residents while also providing economic opportunities for
                             drivers.</p>
-                        <button class="btn bg-lime-600">Buy Tickets</button>
+                        <button onclick="ticketClick()" class="btn bg-lime-600">Buy Tickets</button>
                     </div>
                 </div>
             </div>
-            <!-- bounes section -->
+
 
         </section>
-        <section class="absolute left-[0px] right-[0px] -bottom-[180px] justify-center items-center">
+        <!-- bounes section -->
+
+        <section class="absolute left-[0px] right-[0px] -bottom-[180px] justify-center items-center" id="bounes">
             <div class=" flex gap-3 mx-auto w-[900px]">
                 <div class="flex gap-3 border-[4px] border-solid border-b-lime-500 rounded-2xl p-5 bg-white">
                     <div><img src="images/people.png" alt=""></div>
@@ -111,7 +113,7 @@
                         use by January 2024
                     </div>
                     <div><img src="images/cupon-devider.png" alt=""></div>
-                    <div class="p-10"><span class="text-2xl font-bold ">Couple20</span><br>Coupon Code</div>
+                    <div class="p-10"><span class="text-2xl font-bold ">Couple 20</span><br>Coupon Code</div>
                 </div>
             </div>
             <div class="flex justify-center items-center">
@@ -122,10 +124,12 @@
 
         </section>
         <!-- poribahan section start here  -->
+
         <section
-            class="mx-auto w-[1240px] bg-[#F7F8F8] opacity-100 mb-10 p-10 rounded-2xl border-[3px] border-solid border-t-lime-600">
+            class="mx-auto w-[1240px] bg-[#F7F8F8] opacity-100 mb-10 p-10 rounded-2xl border-[3px] border-solid border-t-lime-600 hidden"
+            id="poribahan-section">
             <div>
-                <h1 class="text-4xl font-bold text-center text-lime-500">Rekha Paribahan</h1>
+                <h1 class="text-4xl font-bold text-center text-lime-500">Rekha-Poribahan</h1>
                 <p class="text-[#030712] opacity-60 text-center">As with any transportation service, it's a good idea
                     for passengers to check schedules, ticket prices, and routes directly with Rekha Poribahan or their
                     authorized agents before planning their journey.</p>
@@ -141,7 +145,8 @@
                         <div>
                             <div><a class="btn bg-lime-100 opacity-100">
                                     <span><img src="images/seat-green.png" alt=""></span>
-                                    <span class="text-lime-500 font-bold"><span>40</span> seats left</span>
+                                    <span class="text-lime-500 font-bold"><span id="seat-left">40</span> seats
+                                        left</span>
                                 </a>
                             </div>
                         </div>
@@ -184,48 +189,48 @@
                         <div>
                             <div class="flex flex-grow justify-between mt-20">
                                 <div class="grid grid-cols-2 gap-10">
-                                    <button class="btn">A1</button>
-                                    <button class="btn">A2</button>
-                                    <button class="btn">B1</button>
-                                    <button class="btn">B2</button>
-                                    <button class="btn">C1</button>
-                                    <button class="btn">C2</button>
-                                    <button class="btn">D1</button>
-                                    <button class="btn">D2</button>
-                                    <button class="btn">E1</button>
-                                    <button class="btn">E2</button>
-                                    <button class="btn">F1</button>
-                                    <button class="btn">F2</button>
-                                    <button class="btn">G1</button>
-                                    <button class="btn">G2</button>
-                                    <button class="btn">H1</button>
-                                    <button class="btn">H2</button>
-                                    <button class="btn">I1</button>
-                                    <button class="btn">I2</button>
-                                    <button class="btn">J1</button>
-                                    <button class="btn">J2</button>
+                                    <button id="A1" class="btn btn-bg">A1</button>
+                                    <button id="A2" class="btn btn-bg">A2</button>
+                                    <button id="B1" class="btn btn-bg">B1</button>
+                                    <button id="B2" class="btn btn-bg">B2</button>
+                                    <button id="C1" class="btn btn-bg">C1</button>
+                                    <button id="C2" class="btn btn-bg">C2</button>
+                                    <button id="D1" class="btn btn-bg">D1</button>
+                                    <button id="D2" class="btn btn-bg">D2</button>
+                                    <button id="E1" class="btn btn-bg">E1</button>
+                                    <button id="E2" class="btn btn-bg">E2</button>
+                                    <button id="F1" class="btn btn-bg">F1</button>
+                                    <button id="F2" class="btn btn-bg">F2</button>
+                                    <button id="G1" class="btn btn-bg">G1</button>
+                                    <button id="G2" class="btn btn-bg">G2</button>
+                                    <button id="H1" class="btn btn-bg">H1</button>
+                                    <button id="H2" class="btn btn-bg">H2</button>
+                                    <button id="I1" class="btn btn-bg">I1</button>
+                                    <button id="I2" class="btn btn-bg">I2</button>
+                                    <button id="J1" class="btn btn-bg">J1</button>
+                                    <button id="J2" class="btn btn-bg">J2</button>
                                 </div>
                                 <div class="grid grid-cols-2 gap-10">
-                                    <button class="btn">A3</button>
-                                    <button class="btn">A4</button>
-                                    <button class="btn">B3</button>
-                                    <button class="btn">B4</button>
-                                    <button class="btn">C3</button>
-                                    <button class="btn">C4</button>
-                                    <button class="btn">D3</button>
-                                    <button class="btn">D4</button>
-                                    <button class="btn">E3</button>
-                                    <button class="btn">E4</button>
-                                    <button class="btn">F3</button>
-                                    <button class="btn">F4</button>
-                                    <button class="btn">G3</button>
-                                    <button class="btn">G4</button>
-                                    <button class="btn">H3</button>
-                                    <button class="btn">H4</button>
-                                    <button class="btn">I3</button>
-                                    <button class="btn">I4</button>
-                                    <button class="btn">J3</button>
-                                    <button class="btn">J4</button>
+                                    <button id="A3" class="btn btn-bg">A3</button>
+                                    <button id="A4" class="btn btn-bg">A4</button>
+                                    <button id="B3" class="btn btn-bg">B3</button>
+                                    <button id="B4" class="btn btn-bg">B4</button>
+                                    <button id="C3" class="btn btn-bg">C3</button>
+                                    <button id="C4" class="btn btn-bg">C4</button>
+                                    <button id="D3" class="btn btn-bg">D3</button>
+                                    <button id="D4" class="btn btn-bg">D4</button>
+                                    <button id="E3" class="btn btn-bg">E3</button>
+                                    <button id="E4" class="btn btn-bg">E4</button>
+                                    <button id="F3" class="btn btn-bg">F3</button>
+                                    <button id="F4" class="btn btn-bg">F4</button>
+                                    <button id="G3" class="btn btn-bg">G3</button>
+                                    <button id="G4" class="btn btn-bg">G4</button>
+                                    <button id="H3" class="btn btn-bg">H3</button>
+                                    <button id="H4" class="btn btn-bg">H4</button>
+                                    <button id="I3" class="btn btn-bg">I3</button>
+                                    <button id="I4" class="btn btn-bg">I4</button>
+                                    <button id="J3" class="btn btn-bg">J3</button>
+                                    <button id="J4" class="btn btn-bg">J4</button>
                                 </div>
                             </div>
 
@@ -237,56 +242,31 @@
                         <hr class="mt-2">
 
                         <div>
+                            <div class="class-container">
+                                <div class="select-seats flex flex-grow justify-between ">
+                                    <div class="Seats ">Seats <span id="seats">0</span></div>
+                                    <div class="class">Class</div>
+                                    <div class="price">Price</div>
 
-                            <div class="overflow-x-auto">
-
-                                <table class="table">
-
-                                    <!-- head -->
-                                    <thead>
-                                        <tr>
-                                            <th>Seats</th>
-                                            <th>Class</th>
-                                            <th>prices</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <!-- row 1 -->
-                                        <tr>
-                                            <td>A1</td>
-                                            <td>Economoy</td>
-                                            <td>550</td>
-                                        </tr>
-                                        <!-- row 2 -->
-                                        <tr class="hover">
-                                            <td>C2</td>
-                                            <td>Economoy</td>
-                                            <td>550</td>
-                                        </tr>
-                                        <hr class="mt-2">
-                                        <tr class="hover">
-                                            <td>Total Price</td>
-                                            <td></td>
-                                            <td>BDT <span>1100</span></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <hr class="mt-2">
-                                <div class="join">
-                                    <input class="input input-bordered join-item" placeholder="Have you any Coupon?" />
-                                    <button class="btn join-item rounded-r-full bg-lime-500 text-white">Apply</button>
                                 </div>
-                                <table>
-                                    <tbody>
-                                        <tr class="hover table">
-                                            <td>Grand Total</td>
-                                            <td></td>
-                                            <td>BDT <span>1100</span></td>
-                                        </tr>
+                                <div class="selected-seats-container" ></div>
+                                <hr />
+                                <h2 class="my-4 font-bold">Total Price: <span id="total-price">0</span> BDT</h2>
+                                <hr />
+                                <div class="coupon-code flex my-3">
+                                    <input id="coupon-code"  type="text" placeholder="Have any Coupon?" class="p-2" />
+                                    <button onclick="updateGrandTotal('apply-btn')" id="apply-btn" class="apply-btn
+                                    bg-lime-500 btn">Apply</button>
 
-                                    </tbody>
-                                </table>
+                                </div>
+                                <hr/>
+                                <h2 class="mt-4 mb-4 font-bold">Grand Total : <span id="grand-total">0</span> BDT</h2>
+                                <hr/>
+
                             </div>
+
+
+
 
                             <form action="#" method="POST">
                                 <!-- Username Input -->
@@ -302,7 +282,7 @@
                                 <div class="mb-6">
                                     <label for="Phone Number*" class="block text-gray-700 text-sm font-bold mb-2">Phone
                                         Number*</label>
-                                    <input placeholder="Enter Phone Number" type="Phone Number*" id="Phone Number*"
+                                    <input placeholder="Enter Phone Number" type="number" id="Phone Number*"
                                         name="Phone Number*"
                                         class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500">
                                 </div>
@@ -314,11 +294,11 @@
                                 </div>
 
                                 <!-- next Button -->
-                                <button class="btn btn-wide w-full bg-lime-500 text-white">Next</button>
+                                <button id="nextBtn" onclick="my_modal_5.showModal()" type="button" class="btn btn-wide w-full bg-lime-500 text-white">Next</button>
 
                             </form>
                             <div class="mt-5 flex gap-5">
-                                <p class="decoration-solid">Terms and condition</p>
+                                <a class="" href="">Terms and Conditions</a>
                                 <p class="decoration-solid">Privacy and policy</p>
                             </div>
 
@@ -334,6 +314,24 @@
 
 
         </section>
+        <section id="Continue" class="text-left"><!-- Open the modal using ID.showModal() method -->
+            <button class="btn hidden" onclick="my_modal_5.showModal()">Open modal</button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+
+              <div class="modal-box">
+                <img class="" src="images/success.png" alt="">
+
+                <h3 class="font-bold text-2xl text-lime-500 mt-5">Succes</h3>
+                <p class="py-4 mt-7">Thanks for booking our bus seats and we have to ensure your safe travel.</p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button onclick="continueClick()"  class="btn bg-lime-500 justify-center items-center">Continue</button>
+                  </form>
+                </div>
+              </div>
+            </dialog></section>
+
         <footer class="mx-auto w-[1170px] bg-black text-white h-[450px] p-20">
             <div class="flex justify-between">
                 <div>
@@ -375,8 +373,10 @@
         </footer>
 
     </main>
+    <script src="./scripts/index.js"> </script>
 
-
+    <!-- <script src="/index.js"></script> -->
+    <script src="scripts/function.js"></script>
 </body>
 
 </html>
